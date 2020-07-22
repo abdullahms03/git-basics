@@ -4,10 +4,11 @@
 - Commit state (commit history) 
 
 ### Initialize a repository  
-This creates an empty repository with .git directory 
+
 ```bash
 git init
 ```
+This creates an empty repository with .git directory 
 
 ### Check the current status of the repository  
 This displays the list of files added/modified
@@ -37,4 +38,21 @@ git add .
 
 ```bash
 git commit -m "<commit message>"
+
+OR
+
+git commit
 ```
+git commit will open the editor to add commit message, it can be too long, can be mutiple lines
+
+### View the commits
+```
+git log
+```
+mutiple options available to filter the commits - by name, by status, by count etc...
+```
+git log -2 
+git log n -3
+git log --author "<author>"
+git log --name-only
+git log --name-status
