@@ -10,8 +10,13 @@ This displays the list of files added/modified
 git status
 ```
 
-Adding/Staging the files to commit
+Adding/Staging the changes to commit
 ```bash
 git add <file>
 ```
 
+Commit the changes
+
+```bash
+git commit -m "<commit message>"
+```
