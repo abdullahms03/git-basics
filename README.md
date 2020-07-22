@@ -16,11 +16,11 @@ git status
 ```
 
 ### Adding/Staging the changes to commit
-- Add a single file
+#### Add a file
 ```bash
 git add <file>
 ```
-- Add multiple files
+#### Add multiple files
 ```bash
 git add <file1> <file2>
 
