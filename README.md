@@ -16,7 +16,11 @@ git status
 ```
 
 ### Adding/Staging the changes to commit
+*staging changes, not files*  
+
+after adding/staging the changes, if there are any more changes to the same file, it still remains untracked unless added(staged) again
 #### Add a file
+*means add the change in the file at that time*
 ```bash
 git add <file>
 ```
