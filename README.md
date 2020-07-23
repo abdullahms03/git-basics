@@ -88,9 +88,26 @@ Also to restore to the previous commit's state(similar to git checkout)
 git restore <file>
 ```
 
-### Git Amend
-To update the last commit with additional changes\
+### Git amend
+To update the last commit with additional changes.\
 Stage the recent change. then, 
 ```
 git commit --amend 
 ```
+To update only the commit message,\
+just run the above command and update the message, without staging any additional changes
+
+### Git diff
+To view the difference on what changed in the local directory
+```
+git diff
+```
+To view the diff after staging
+```
+git diff --staged
+```
+
+### Git ignore
+To ignore specific files or directories\
+Add .gitignore file to the root directory and add the file name that needs to be ignored\
+File extension, directory, wildcard can be used herer

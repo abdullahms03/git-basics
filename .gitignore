@@ -1,0 +1,10 @@
+# Ignore the complete build directory
+build/
+# Ignore all the sub directories and files inside foo
+build/foo/**
+# Ignore all the .out files located inside build directory and from all sub directories 
+build/**/*.out
+# Specific file name
+project.info
+# Specific extension
+*.iml
