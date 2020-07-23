@@ -64,7 +64,8 @@ git log -p
 
 ### Git checkout
 
-Checkout the branch or file or commit on it's state\
+Update the working directory with some other state
+(branch or file or commit)
 
 eg., checkout the state of change from last commit
 #### With file name
@@ -74,4 +75,22 @@ git checkout -- <file>
 #### Multiple files
 ```
 git checkout -- .
+```
+
+### Git restore
+
+To unstage a file 
+```
+git restore --staged <file>
+```
+Also to restore to the previous commit's state(similar to git checkout)
+```
+git restore <file>
+```
+
+### Git Amend
+To update the last commit with additional changes\
+Stage the recent change. then, 
+```
+git commit --amend 
 ```
