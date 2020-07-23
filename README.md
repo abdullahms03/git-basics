@@ -1,18 +1,18 @@
 ### Three state architecture of git
 - Working directory
 - Staging area
-- Commit state (commit history) 
+- Commit state (commit history)
 
 ### Initialize a repository  
 
-```bash
+```
 git init
 ```
 This creates an empty repository with .git directory 
 
 ### Check the current status of the repository  
 This displays the list of files added/modified
-```bash
+```
 git status
 ```
 
@@ -22,11 +22,11 @@ git status
 after adding/staging the changes, if there are any more changes to the same file, it still remains untracked unless added(staged) again
 #### Add a file
 *means add the change in the file at that time*
-```bash
+```
 git add <file>
 ```
 #### Add multiple files
-```bash
+```
 git add <file1> <file2>
 
 OR
@@ -36,7 +36,7 @@ git add .
 
 ### Commit the changes
 
-```bash
+```
 git commit -m "<commit message>"
 
 OR
@@ -56,3 +56,22 @@ git log n -3
 git log --author "<author>"
 git log --name-only
 git log --name-status
+```
+to view the changes in the commits
+```
+git log -p
+```
+
+### Git checkout
+
+Checkout the branch or file or commit on it's state\
+
+eg., checkout the state of change from last commit
+#### With file name
+```
+git checkout -- <file>
+```
+#### Multiple files
+```
+git checkout -- .
+```
