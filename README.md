@@ -45,6 +45,11 @@ git commit
 ```
 git commit will open the editor to add commit message, it can be too long, can be mutiple lines
 
+Stage(add) the files and commit
+```
+git commit -a -m "<commit message>"
+```
+
 a commit has
 - the snapshot of the changes
 - metadata(eg., user details) and
@@ -138,4 +143,17 @@ git branch <branchname>
 ```
 This will create a new branch (with the name specified) from the latest commit of current branch
 
+**Current branch always points to the latest commit**
+
 **HEAD always points to the latest commit of current checked-out branch**
+
+### Git merge
+To merge branches
+```
+git merge
+```
+#### Fast-forward merge
+Moving the pointer of current branch to the latest commit of branch which is ahead
+```
+git merge <branchname>
+```
