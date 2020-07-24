@@ -45,6 +45,13 @@ git commit
 ```
 git commit will open the editor to add commit message, it can be too long, can be mutiple lines
 
+a commit has
+- the snapshot of the changes
+- metadata(eg., user details) and
+- link to the previous commit
+
+commit hash is the unique id generated with the combination of the above commit contents
+
 ### View the commits
 ```
 git log
