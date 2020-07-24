@@ -83,6 +83,14 @@ git checkout -- <file>
 ```
 git checkout -- .
 ```
+#### Checkout a branch
+```
+git checkout <branchname>
+```
+Create a new branch and checkout
+```
+git checkout -b <branchname>
+```
 
 ### Git restore
 
@@ -118,3 +126,16 @@ git diff --staged
 To ignore specific files or directories\
 Add .gitignore file to the root directory and add the file name that needs to be ignored\
 File extension, directory, wildcard can be used herer
+
+### Git branch
+To view the current branch
+```
+git branch
+```
+To create a new branch
+```
+git branch <branchname>
+```
+This will create a new branch (with the name specified) from the latest commit of current branch
+
+**HEAD always points to the latest commit of current checked-out branch**
