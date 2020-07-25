@@ -181,3 +181,14 @@ git branch -d <branchname>
 ```
 can not delete a branch which is currently checked out, as HEAD is pointing to the latest commit of that branch
 
+### Git rebase
+To avoid merge commits.
+The new branch which was created and changes are made can be rebased with the parent branch, so that if there are any new changes to the parent branch that gets applied to the new branch. 
+The parent branch still points to it's latest commit.
+```
+git rebase <parentbranch>
+```
+rebase command to be run from the branch which needs to be merged to parent branch.\
+Once rebase is successfully completed, switch to parent branch and run merge command, it now works as a fast-forward merge.\
+**No merge commits introduced in this case.**
+
