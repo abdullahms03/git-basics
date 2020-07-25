@@ -73,6 +73,10 @@ to view the changes in the commits
 ```
 git log -p
 ```
+To view the commits with a graphical illustration across branches
+```
+git log --graph
+```
 
 ### Git checkout
 
@@ -158,3 +162,13 @@ Moving the pointer of current branch to the latest commit of branch(new branch) 
 
 #### Recursive merge
 If the branch from which new branch is created has some additional changes post new branch creation, then it would undergo recursive merge.
+
+#### Merge conflicts
+If there are any changes to the same piece of code in both the current branch and the branch to be merged, auto-merging will fail. Details of the conflicts will be displayed in the files with HEAD and incoming changes.
+User has to manually fix the conflicts and commit the changes.
+
+#### Delete branch
+```
+git branch -d <branchname>
+```
+can not delete a branch which is currently checked out, as HEAD is pointing to the latest commit of that branch
