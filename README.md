@@ -100,6 +100,14 @@ Create a new branch and checkout
 ```
 git checkout -b <branchname>
 ```
+#### Switch to a older commit
+```
+git checkout <commitId>
+```
+This is moving the HEAD to point to the older commit, this Will result in detatched HEAD state.\
+The current branch will still point to the latest commit, it will not be impacted.
+
+New branch can be created from the older commit and checked out to proceed with further changes on it. This will drop the detatched HEAD state.
 
 ### Git restore
 
@@ -167,8 +175,9 @@ If the branch from which new branch is created has some additional changes post 
 If there are any changes to the same piece of code in both the current branch and the branch to be merged, auto-merging will fail. Details of the conflicts will be displayed in the files with HEAD and incoming changes.
 User has to manually fix the conflicts and commit the changes.
 
-#### Delete branch
+### Delete branch
 ```
 git branch -d <branchname>
 ```
 can not delete a branch which is currently checked out, as HEAD is pointing to the latest commit of that branch
+
