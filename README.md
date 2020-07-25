@@ -150,10 +150,11 @@ This will create a new branch (with the name specified) from the latest commit o
 ### Git merge
 To merge branches
 ```
-git merge
-```
-#### Fast-forward merge
-Moving the pointer of current branch to the latest commit of branch which is ahead
-```
 git merge <branchname>
 ```
+#### Fast-forward merge
+If the branch from which the new branch is created doesn't have any further changes after the new branch creation, it is just some commits behind the new branch.\
+Moving the pointer of current branch to the latest commit of branch(new branch) which is ahead
+
+#### Recursive merge
+If the branch from which new branch is created has some additional changes post new branch creation, then it would undergo recursive merge.
