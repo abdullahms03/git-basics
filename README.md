@@ -192,3 +192,68 @@ rebase command to be run from the branch which needs to be merged to parent bran
 Once rebase is successfully completed, switch to parent branch and run merge command, it now works as a fast-forward merge.\
 **No merge commits introduced in this case.**
 
+## Remote Repository
+
+Git remote repository will have a .git url\
+*e.g. https://github.com/abdullahms03/git-basics.git*
+
+### Clone a remote repository
+To get the repository to the local directory
+```
+git clone <githubrepourl>
+```
+This will create replica of master branch and also to establish the link, it creates\
+*origin/master\
+origin/{branch1}\
+origin/{branch2}*
+
+If origin/master is checked out, it will be detatched HEAD state as, local HEAD is pointing to a remote branch and there is no local branch.
+To resolve, create a local branch HEAD will not point to the commit in the local branch
+
+### Git push 
+push the local changes to remote repo
+```
+git push
+```
+
+### Git pull
+To get the remote changes to local
+```
+git pull
+```
+
+### Link between local and remote
+The link is the pointer to remote\
+to identify the remote pointer
+```
+git remote
+```
+This would give the remote name, default name is *origin*. This can be changed as required.
+
+To view remote branches
+```
+git branch -a
+```
+remote branches will be displayed in the below format\
+*remotes/origin/{branchname}*
+These are clones of the remote repo
+
+To view any new branches created after cloning the repo. This will show all the branches, but not update the local repo with the new branch
+```
+git remote show origin
+```
+
+### Git fetch
+To get all the new branches to local. Updates the remote references of all the remote branches in the local copy
+```
+git fetch
+```
+
+### Add existing repo to GitHub
+Create a repository in GitHub
+```
+git remote add origin <githubrepourl>
+
+git push -u origin master
+```
+
