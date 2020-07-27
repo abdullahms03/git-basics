@@ -221,6 +221,12 @@ To get the remote changes to local
 ```
 git pull
 ```
+This will fetch all the changes to remote reference first and merge it to the local branch from which the operation is performed.
+
+```
+git pull --rebase
+```
+fetch the changes from remote, apply to local branch, even if the local is ahead of the remote, merge commit will not happen. Both will be considered as separate commits. (rebase concept applied along with pull)
 
 ### Link between local and remote
 The link is the pointer to remote,\
@@ -244,11 +250,22 @@ git remote show origin
 ```
 
 ### Git fetch
-To get all the new branches to local. Updates the remote references of all the remote branches in the local copy
+To get all the new branches and commits to local. Updates the remote references of all the remote branches in the local copy.\
+*Will not harm the local branches*
 ```
 git fetch
 ```
+The actual local branch will not be impacted with git fetch.\
+To get the changes to the local branch itself, merge the changes in the remote reference branch to the local branch
+```
+git merge origin/{branchname}
+```
+The above can be same branch of different branch.\
+If same branch, then the process is completed.\
+If merge it from a different branch, then the local branch will now be ahead of the actual remote reference. So, additional push is required here to sync the branch to remote.
 
+***git pull does both in a single step***
+## GitHub
 ### Add existing repo to GitHub
 Create a repository in GitHub
 ```
@@ -257,3 +274,8 @@ git remote add origin <githubrepourl>
 git push -u origin master
 ```
 
+### Fork
+For a repository is getting own copy of any repository in GitHub.
+
+### Pull request
+Make any changes to the forked repository and raise a pull request to get it merged to the original repo.
