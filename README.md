@@ -223,7 +223,7 @@ git pull
 ```
 
 ### Link between local and remote
-The link is the pointer to remote\
+The link is the pointer to remote,\
 to identify the remote pointer
 ```
 git remote
