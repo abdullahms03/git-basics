@@ -1,3 +1,45 @@
+# Git Basics
+
+<!--TOC-->
++ [Three state architecture](#Three-state-architecture-of-git)
++ [Local Repo](#Local-Repo)   
+    - [Initialize a repo](#Initialize-a-repository)
+    - [Check the current status](#Check-the-current-status-of-the-repository)
+    - [Adding/Staging the changes to commit](#Adding/Staging-the-changes-to-commit)
+        * [Add a file](#Add-a-file)
+        * [Add multiple files](#Add-multiple-files)
+    - [Commit the changes](#Commit-the-changes)
+    - [View the commits](#View-the-commits)
+    - [Git checkout](#Git-checkout)
+        * [With file name](#With-file-name)
+        * [Multiple files](#Multiple-files)
+        * [Checkout a branch](#Checkout-a-branch)
+        * [Switch to a older commit](Switch-to-a-older-commit)
+    - [Git restore](#Git-restore)
+    - [Git amend](#Git-amend)
+    - [Git diff](#Git-diff)
+    - [Git ignore](#Git-ignore)
+    - [Git branch](#Git-branch)
+    - [Git merge](#Git-merge)
+        * [Fast-forward merge](#Fast-forward-merge)
+        * [Recursive merge](#Recursive-merge)
+        * [Merge conflicts](#Merge-conflicts)
+    - [Delete branch](#Delete-branch)
+    - [Git rebase](#Git-rebase)
++ [Remote Repository](#Remote-Repository)
+    - [Clone a remote repository](#Clone-a-remote-repository)
+    - [Git push](#Git-push)
+    - [Git pull](Git-pull)
+    - [Link between local and remote](#Link-between-local-and-remote)
+    - [Git fetch](#Git-fetch)
++ [GitHub](#GitHub)
+    - [Add existing repo to GitHub](#Add-existing-repo-to-GitHub)
+    - [Fork](#Fork)
+    - [Pull request](#Pull-request)
+
+
+<!--TOC-->
+## Local Repo
 ### Three state architecture of git
 - Working directory
 - Staging area
