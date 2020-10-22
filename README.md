@@ -34,6 +34,8 @@
     - [Git fetch](#Git-fetch)
 + [GitHub](#GitHub)
     - [Add existing repo to GitHub](#Add-existing-repo-to-GitHub)
+    - [Update remote Url](#Update-remote-Url)
+    - [Check remote repo](#Check-remote-repo)
     - [Fork](#Fork)
     - [Pull request](#Pull-request)
 
@@ -314,6 +316,14 @@ Create a repository in GitHub
 git remote add origin <githubrepourl>
 
 git push -u origin master
+```
+### Update remote Url
+```
+git remote set-url origin <githubrepourl>
+```
+### Check remote repo
+```
+git remote -v
 ```
 
 ### Fork
